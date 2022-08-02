@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-image: url("https://codesync.global/uploads/media/theme/0001/01/671d73b11bac636b4a9bc4cf443925a0b8c1f746.jpeg"); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: "M PLUS Code Latin", sans-serif;
+}
+
+/* barra de menú */
+#menu {overflow: hidden;}
+nav {
+    position: fixed;
+    margin: 0.5% auto;
+    margin-left: 10%;
+    width: 80%;
+    height: 40px;
+    background-color: red;
+}
+header#menu ul {
+    list-style: none;
+    width: 100%;
+    height: 40px;
+}
+header#menu li {
+    overflow: hidden;
+    float: left; /* esto hace que flote hacia la derecha */
+    width: 25%;
+    height: 40px;
+    background-color: green;
+    margin-top: 0px;
+}
+header#menu div.contenedor_general_menu:hover{
+    margin-top: -40px;
+}
+header#menu div.contenedor_general_menu {
+    width: 100%;
+    height: 80px; /* tiene que tener el doble de altura que el li para el efecto de hoover */
+    background-color: yellow;
+    -webkit-transition:margin-top.2s;
+            transition:margin-top.2s;
+}
+header#menu div.contenedor_uno {
+    overflow: hidden;
+    width: 100%;
+    height: 36px;
+    background-color: black;
+    border-bottom: 4px solid rgb(18, 95, 126); /* borde celeste */
+}
+header#menu div.contenedor_dos {
+    overflow: hidden;
+    width: 100%;
+    height: 36px;
+    background-color: rgb(18, 95, 126);
+    border-bottom: 4px solid black; /* borde negro de abajo */
+}
+a.texto_uno, a.texto_dos {
+    text-decoration: none;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+
+/*   Esto es para posicionar el  título (h1 y p) */
+section.textalign {
+    margin: 20% 10% auto;
+  }
+
+section.textalign h1{
+    margin: 5% auto;
+        font-family: "Press Start 2P", cursive;
+        font-size: 4em;
+}
+
+section.textalign p{
+        font-size: 1.5em;
+        margin: 2% auto;
+}
+
+/* contenedor general*/
+ section#contenedor {
+    margin: 0% auto; /* Esta linea sustituye a  margin:auto; margin-top: 2%;*/
+    width: 100%;
+    min-height: 90em;
+    background-color: rgba(0, 217, 255, 0.247); /* El último valor es la opacidad */
+}
+
+/* caja negra que dice quién soy */
+section#cont1 {
+    overflow: hidden;
+    margin: 20% auto;
+    width: 100%;
+    height: 35em;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+article.presentacion{
+    margin: 10% auto;
+    width: 80%;
+  }
+article.presentacion p{
+    margin: 1% auto;
+}
+article.presentacion h3, h2{
+    margin: 2% auto;
+}
+
+/* margenes del area del portfolio */
+section#cont2 {
+    overflow: hidden;
+    margin: 20% auto;
+    overflow: hidden; /* esto es para que el header dentro de la section pueda tener margen arriba */
+    width: 80%;  
+    background-color: rgba(0, 0, 0, 0);
+}
+/* header de portfolio */
+section#cont2 header {
+    font-size: 2.2em;
+    background-color: black;
+    margin: 0% auto;
+    width: 100%;
+    height: 2em; 
+    /* Este es el efecto para que la letra se mezcle con el fondo*/
+    mix-blend-mode:multiply;  /* Para que quede 100% transparente la letra tiene que ser blanca  */
+    border-radius: 25px;
+    font-family: "Press Start 2P", cursive;    
+}
+h1#portfolio {
+    margin: 1.5% auto;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+/* article de portfolio, con galería de fotos */
+section#cont2 article {
+/*     display: flex; */
+    justify-content: center;
+    margin: 2% auto;
+    width: 100%;
+    min-height: 29em;
+    background-color: rgb(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+section#cont2 article img{
+    margin: 2% 2% auto;
+    width: 28.5%;
+    border-radius: 20px;
+}
+
+/* contenedor del formulario */
+section#cont3{
+    margin: 0% auto;
+    width: 80%;
+    height: 29em;
+    background-color:rgb(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-radius: 20px;
+}
+
+section#cont3 h1 {
+    margin: 0 auto 40px;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Press Start 2P", cursive;
+    font-size: 1.5em;
+  }
+  section#cont3 form label {
+    position: relative;
+    display: block;
+  }
+  section#cont3 input {
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    padding: 20px;
+    width: 600px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+  section#cont3 textarea, section#cont3 button {
+    width: 600px;
+    height: 200px;
+    font-size: 18px;
+  }
+  section#cont3 button {
+    width: 600px;
+    height: 50px;
+    font-size: 18px;
+  }
