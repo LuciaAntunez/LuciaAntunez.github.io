@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio Lucía</title>
+        <!-- Esta es a fuente del h1 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@200;400&display=swap"
+          rel="stylesheet"
+        />
+    
+        <!-- Esta es la fuente general -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300&family=Press+Start+2P&display=swap"
+          rel="stylesheet"
+        />
+    
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    
+        <!-- esta etiqueta sirve para optimizar el sitio para móviles,  
+        ayuda a definir el ancho, alto y escala del área usada por el navegador para mostrar contenido -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+        <header id="menu" >
+            <nav>
+                <ul>
+                  <li>
+                    <div class="contenedor_general_menu" :hover>
+                      <div class="contenedor_uno" >
+                        <a href="#menu" class="texto_uno">Iniicio</a>
+                      </div>
+                      <div class="contenedor_dos">
+                        <a href="#menu" class="texto_dos">Iniicio</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="contenedor_general_menu" :hover>
+                      <div class="contenedor_uno" >
+                        <a href="#cont1" class="texto_uno">About me</a>
+                      </div>
+                      <div class="contenedor_dos">
+                        <a href="#cont1" class="texto_dos">About me</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="contenedor_general_menu" :hover>
+                      <div class="contenedor_uno" >
+                        <a href="#cont2" class="texto_uno">Portfolio</a>
+                      </div>
+                      <div class="contenedor_dos">
+                        <a href="#cont2" class="texto_dos">Portfolio</a>
+                      </div>
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="contenedor_general_menu" :hover>
+                      <div class="contenedor_uno" >
+                        <a href="#cont3" class="texto_uno">Contact</a>
+                      </div>
+                      <div class="contenedor_dos">
+                        <a href="#cont3" class="texto_dos">contact</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+            </nav>
+
+            <section class="textalign">
+                <h1>&lt;lucia/&gt;</h1>
+                <p>Front-end web developer</p>
+                <p>Graphic designer</p>
+              </section>
+        </header>
+
+    <section id="contenedor" >
+
+        <section id="cont1" >
+            <article class="presentacion">
+                <h2>Hello Word!</h2>
+        <p>My name is <b>Lucía Antúnez</b>, and I'm a Uruguay-based Freelancer</p>
+        <p>
+          I have a diverse set of skills, rangigng from design, to HTML + CSS +
+          Javascript, all the way to Unity3D, and various graphic design
+          programs
+        </p>
+        <h3> - Code and Design - </h3>
+        <p>
+          At the art university (UDELAR) I studied a degree in Digital and Electronic Art. 
+          And later I studied Web Development at Jovenes a Programar.
+        </p>
+        <p>
+          I am passionate about technology and design, 
+          and I love to combine both facets of myself when developing a website. 
+        </p>
+        <p>
+          I am constantly looking for knowledge growth and new professional challenges.
+          If you want to see some examples of what I can do keep scrolling down!
+        </p>
+            </article>
+        </section>
+
+        <section id="cont2" >
+            <header>
+                <h1 id="portfolio" > Portfolio </h1>
+            </header>
+            <article>
+                <img src="img\gd.png" alt="imagen1">
+                <img src="img\exp.png" alt="imagen2">
+                <img src="img\pg.png" alt="imagen3">
+                <img src="img\sale.png" alt="imagen4">
+                <img src="img\nat.png" alt="imagen5">
+                <img src="img\qr.png" alt="imagen6">
+            </article>
+        </section>
+
+        <section id="cont3" >
+            <article>
+              <h1>Contact Me</h1>
+              <form action="/formulario" method="post">
+                <label>
+                  <input id="fname" type="text" placeholder="Name" />
+                </label>
+                <label>
+                  <input type="email" placeholder="Email" />
+                </label>
+                <label>
+                  <input type="text" placeholder="Subject" />
+                </label>
+                <label>
+                  <textarea type="textarea" placeholder="Message"></textarea>
+                  <br />
+                  <button type="submit">Send message!</button>
+                </label>
+              </form>
+            </article>
+        </section>
+
+    </section>
+
+  </body>
+</html>
